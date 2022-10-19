@@ -8,7 +8,7 @@
        <table>
         <tr>
             <td>
-                <label for="firstname">FirstName</label>
+                <label for="firstname">firstname</label>
             </td>
             <td>
                 <input type="text" id="firstname" name="firstname" placeholder="Firstname">
@@ -16,7 +16,7 @@
         </tr>
         <tr>
             <td>
-                <label for="lastname">LastName</label>
+                <label for="lastname">lastName</label>
             </td>
             <td>
                 <input type="text" id="lastname" name="lastname" placeholder="Lastname">
@@ -24,7 +24,7 @@
         </tr>
         <tr>
             <td>
-                <label for="address">Address</label>
+                <label for="address">address</label>
             </td>
             <td>
                 <textarea id="address" name="address" placeholder="Enter your address" rows="6" cols="20"></textarea>
@@ -119,11 +119,11 @@
 
         function saveData(){ 
      
-            var firstname = document.getEelementById('firstname').value;
+            var firstname = document.getElementById('firstname').value;
      
-            var lastname = document.getEelementById('lastname').value;
+            var lastname = document.getElementById('lastname').value;
      
-            var address = document.getEelementById('address').value;
+            var address = document.getElementById('address').value;
      
       
             localStorage.setItem('firstname',firstname);
