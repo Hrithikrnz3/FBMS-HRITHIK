@@ -1,11 +1,38 @@
 <html>
     <head>
         <title>Booking page</title>
+        <link href="style.css" type="text/css" rel="stylesheet";>
+        <style type="text/css">
+            label{
+                color: aqua;
+                font-weight: bold;
+            }
+            table{
+    
+                border: 2px solid cyan;
+                border-radius: 30px;
+            }
+            table td{
+                color: green;
+            }
+        </style>
     </head>
     <body background="flight2.png" text="white">
     <h1 align="center">Search for flights</h1>
     <form action="print.html" method="post">
        <table>
+        <tr>
+            <td>
+                <label for="title">Title</label>
+            </td>
+            <td>
+                <select id="title" name="title" multiple>
+                    <option value="1" selected>Mr.</option>
+                    <option value="2">Mrs.</option>
+                    <option value="3" selected>Ms.</option>
+                </select>
+            </td>
+        </tr>
         <tr>
             <td>
                 <label for="firstname">firstname</label>
@@ -64,6 +91,15 @@
                 <input type="email" id="email" name="email">
             </td>
         </tr>
+        <tr>
+            <td>
+                <label for="photo">Photo</label>
+            </td>
+            <td>
+                <input type="file" id="photo" name="photo" accept="image/*,*.pdf">
+            </td>
+        </tr>
+        
         <tr>
             <td>
                 <label for="username">Username</label>
